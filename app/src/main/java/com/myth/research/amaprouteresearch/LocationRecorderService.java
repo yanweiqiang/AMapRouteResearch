@@ -79,7 +79,7 @@ public class LocationRecorderService extends Service implements AMapLocationList
         AMapLocationClientOption option = new AMapLocationClientOption();
         //高精度定位
         option.setLocationMode(AMapLocationClientOption.AMapLocationMode.Hight_Accuracy);
-        //定位时间间隔10秒
+        //定位时间间隔
         option.setInterval(2 * 1000);
         mLocationClient.setLocationOption(option);
         mLocationClient.setLocationListener(this);
